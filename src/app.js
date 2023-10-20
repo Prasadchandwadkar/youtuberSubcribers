@@ -151,7 +151,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: "https://youtubesubscriber-8f2t.onrender.com",
+      url: "https://youtubesubscriber-fgis.onrender.com",
     },
   ],
 };
