@@ -95,27 +95,7 @@ app.post("/subscribers", async (req, res) => {
  *         description: Successful response
  *       500:
  *         description: Internal Server Error
- *   post:
- *     summary: Create a new subscriber's name and subscribed channel.
- *     description: Create a new subscriber's name and their subscribed channel.
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *               subscribedChannel:
- *                 type: string
- *     responses:
- *       201:
- *         description: Subscriber created successfully
- *       400:
- *         description: Bad Request
- *       500:
- *         description: Internal Server Error
+ *   
  */
 app.get("/subscribers/name", async (req, res) => {
   try {
@@ -147,34 +127,7 @@ app.get("/subscribers/name", async (req, res) => {
  *         description: Successful response
  *       400:
  *         description: Subscriber not found
- *   post:
- *     summary: Create a subscriber with a specific ID.
- *     description: Create a new subscriber with the provided ID.
- *     parameters:
- *       - in: path
- *         name: id
- *         required: true
- *         description: The ID for the new subscriber.
- *         schema:
- *           type: string
- *     requestBody:
- *       required: true
- *       content:
- *         application/json:
- *           schema:
- *             type: object
- *             properties:
- *               name:
- *                 type: string
- *               subscribedChannel:
- *                 type: string
- *     responses:
- *       201:
- *         description: Subscriber created successfully
- *       400:
- *         description: Bad Request
- *       500:
- *         description: Internal Server Error
+ *   
  */
 app.get("/subscribers/:id", async (req, res) => {
   try {
@@ -198,7 +151,7 @@ const swaggerDefinition = {
   },
   servers: [
     {
-      url: "https://get-youtube-subscribers-p7ok.onrender.com",
+      url: "https://youtubesubscriber-8f2t.onrender.com",
     },
   ],
 };
